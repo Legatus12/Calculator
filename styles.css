@@ -74,15 +74,16 @@ body{
     gap: 20px;
 }
 
-.button, .operator, .specials{
+.button, .operator, .special{
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25%;
+    transition-duration: 320ms;
 }
 
-.button:hover, .operator:hover, .specials:hover{
-    cursor: pointer;
+.button:hover, .operator:hover, .special:hover{
+    cursor: pointer; 
 }
 
 .button{
@@ -101,12 +102,11 @@ body{
     background-color: #e06668 ;
 }
 
-.specials{
+.special{
     background-color: #47b2b0 ;
 }
 
-.specials:hover{
+.special:hover{
     background-color: #71c6c5 ;
 }
-
 /*by Pablo, web dev.

@@ -73,6 +73,8 @@ const specials = document.getElementsByClassName("specials");
             numbers = [];
             screen.innerHTML = "0";
             previous.innerHTML = "";
+            operation = "";
+            newNumber = true;
             repeating = false;
             break;
         case "backspace" :
@@ -80,7 +82,12 @@ const specials = document.getElementsByClassName("specials");
                 screen.innerHTML = "0";
                 previous.innerHTML = "";
             }
-            screen.innerHTML = screen.innerHTML.substr(0, screen.innerHTML.length - 1);
+            if(screen.innerHTML.length === 1){
+                screen.innerHTML = "0";
+                newNumber = true;
+            }
+            else
+                screen.innerHTML = screen.innerHTML.substr(0, screen.innerHTML.length - 1);
             repeating = false;
             break;
         case "negative" :
@@ -134,5 +141,4 @@ document.getElementById("equal").addEventListener("click", () => {
         repeating = true;
         console.log(numbers);
 }});
-
 //by Pablo, web dev.
