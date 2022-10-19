@@ -19,7 +19,7 @@ let result;
 //creamos constantes que almacenan todos los botones de la aplicación, clasificándolos en botones de números, operadores y botones especiales
 const buttons = document.getElementsByClassName("button");
 const operators = document.getElementsByClassName("operator");
-const specials = document.getElementsByClassName("specials");
+const specials = document.getElementsByClassName("special");
 
 [...buttons].forEach(x => x.addEventListener("click", () => {
     console.log(x.id);
