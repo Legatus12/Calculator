@@ -141,4 +141,4 @@ document.getElementById("equal").addEventListener("click", () => {
         repeating = true;
         console.log(numbers);
 }});
-//by Pablo, web dev.
+//by Pablo.
